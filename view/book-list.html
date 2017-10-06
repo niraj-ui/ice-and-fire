@@ -1,0 +1,5 @@
+<div class="col-lg-4 col-md-4 col-ms-4 col-xs-12  ">
+
+<div ng-repeat="book in data[0] | orderBy:'name' | orderBy: myc.orderProp | filter:book | filter:authors">    
+<li><a href="#/books/{{$index}}">{{book.name}}  </a> </li>
+</div></div>

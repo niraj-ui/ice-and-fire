@@ -1,0 +1,17 @@
+<div ng-controller="charctersDetailsContoroller as chprint" ng-init="chprint.loadCharctersDetails() " class="container">
+     <h1>Charters Details page</h1>
+ 
+    
+     <p><strong>url:</strong> {{chprint.cdata.url}}</p>
+     <p><strong>name:</strong> {{chprint.cdata.name}}</p>
+     <p><strong>gender:</strong> {{chprint.cdata.gender}}</p>
+     <p><strong>culture:</strong> {{chprint.cdata.culture}}</p>
+     <p><strong>aliases:</strong> {{chprint.cdata.aliases}}</p>
+    
+     <p><strong>books:</strong><li ng-repeat="booklist in  chprint.cdata.books"><a href="{{booklist}}">{{booklist}}</a> </li>  </p>
+
+    </div>
+   
+   
+ 
+ 

@@ -1,0 +1,17 @@
+<div ng-controller="housesDetailsontroller as hprnt" ng-init="hprnt.loadHousesDetails() " class="container">
+     <h1>Houses Details page</h1>
+    
+    
+<p><strong>url:</strong> {{hprnt.hdata.url}}</p>
+<p><strong>name:</strong> {{hprnt.hdata.name}}</p>
+<p><strong>region:</strong> {{hprnt.hdata.region}}</p>
+<p><strong>coat Of Arms:</strong> {{hprnt.hdata.coatOfArms}}</p>
+<p><strong>over lord:</strong> {{hprnt.hdata.overlord}}</p>
+<p><strong>sworn Members:</strong>
+<ul><li ng-repeat="hosuemember in  hprnt.hdata.swornMembers"><a href="{{hosuemember}}">{{hosuemember}}</a> </li> </ul>
+</p>
+
+    </div>
+  
+ 
+ 

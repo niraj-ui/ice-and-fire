@@ -1,0 +1,11 @@
+.container{border: 2px solid #000; margin-top: 50px ;background: rgba(0,0,0,0.9 );color:#fff; }
+body{background: url(../images/throne-bg.jpg) no-repeat top center fixed; background-size: 100% 100%;}
+p,a,strong{color: #fff;}
+hr{margin: 0px 0;}
+li {list-style: none;background: rgba(255,255,255,0.25);border-bottom: 1px solid #696666; }
+li a{display: block; padding:10px 15px;font-size: 16px;}
+li a:hover{background: #eee; color: #000;text-decoration: none;}
+ul,li{padding: 0; margin: 0;}
+.head_top{border: 1px solid #696666; padding: 10px 15px; }
+
+

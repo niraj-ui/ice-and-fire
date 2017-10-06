@@ -1,0 +1,33 @@
+<div class="container" ng-controller="mycntrl as myc"  ng-init="myc.loadAllData()">
+        <div class="col-lg-4 col-md-4 col-ms-4 col-xs-12 pull-right "><label>Arrange by:</label>
+              <select class="form-control" ng-model="myc.orderProp" >
+     <option value="name" ng-selected="true">Forward</option>
+     <option value="-name" ng-selected="false">Reverse</option>
+     </select>
+    </div> 
+    <div class="col-lg-8 col-md-8 col-xs-12"><h1>Ice And Fire</h1> </div>
+
+
+    <div class="clearfix"></div>   <hr><br><br> <div class="clearfix"></div>
+      <div class="row">
+<div class="col-lg-4 col-md-4 col-ms-4 col-xs-12 "><div class="head_top"><h4>Books - Names</h4>
+   <div class="row"> <div class="col-md-6"> <input type="text" placeholder="Book Name" class="form-control" ng-model="book.name" >  </div> 
+       <div class="col-md-6"><input type="text" placeholder="Book Author Name" class="form-control" ng-model="book.authors"></div></div>
+      </div></div>
+    
+    
+<div class="col-lg-4 col-md-4 col-ms-4 col-xs-12 "><div class="head_top"><h4>Charcters - Aliases</h4> <input type="text" placeholder="Serch by Aliases" class="form-control" ng-model="characters.aliases"></div></div> 
+<div class="col-lg-4 col-md-4 col-ms-4 col-xs-12 "><div class="head_top"><h4>Houses - Names</h4> <input type="text" placeholder="Serch by Name" class="form-control" ng-model="houses.name"></div></div>
+
+ 
+    
+<div ng-repeat="data in myc">
+  
+    <div class="clearfix"></div>
+<book-dir></book-dir> 
+<char-dir></char-dir> 
+<houses-dir></houses-dir>  
+    
+</div></div>
+ 
+</div>

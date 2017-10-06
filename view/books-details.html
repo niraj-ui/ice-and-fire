@@ -1,0 +1,31 @@
+<div ng-controller="bookDetailsController as bctr" ng-init="bctr.loadBookDetails() ">
+ <div class="container">    <h1>Books Details page</h1>
+    
+    <p><strong>Url:</strong>    {{bctr.bdata.url}}</p>
+     
+     <p><strong>Name:</strong>{{bctr.bdata.name}}</p>
+<p><strong>isbn</strong>: {{bctr.bdata.isbn}}</p>
+<p><strong>number Of Pages</strong>: {{bctr.bdata.numberOfPages}}</p>
+<p><strong>publisher</strong>: {{bctr.bdata.publisher}}</p>
+<p><strong>country</strong>: {{bctr.bdata.country}}</p>
+<p><strong>released</strong>: {{bctr.bdata.released}}</p>
+           <div class="clearfix"></div>  <br>
+ <strong>characters</strong>: 
+        <ul>
+        <li ng-repeat="charcter in bctr.bdata.characters"><a href="{{charcter}}">{{charcter}}</a> </li>
+        </ul>
+          <div class="clearfix"></div>  <br>
+ <strong>povCharacters</strong>: 
+        
+        <ul>
+        <li ng-repeat="povchar in bctr.bdata.povCharacters"><a href="{{povchar}}">{{povchar}}</a> </li>
+        </ul>
+        
+        
+     </div>
+     
+    <br>
+    
+    </div>
+ 
+ 
