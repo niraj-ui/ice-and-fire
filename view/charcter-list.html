@@ -2,7 +2,7 @@
 <div class="col-lg-4 col-md-4 col-ms-4 col-xs-12">
 
 
-<div ng-repeat="charcter in data[1] | orderBy:'name' | orderBy: myc.orderProp | filter:charcter">
+<div ng-repeat="charcter in data[1] | orderBy:'name' | orderBy: myc.orderProp | filter:charcter.name">
     <li><a href="#/charcters/{{$index}}"><!--{{charcter.url}}         <br>-->
 <span ng-repeat="alis in charcter.aliases">{{alis}}</span> </a> </li>
 </div></div>
